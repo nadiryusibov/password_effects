@@ -1,0 +1,23 @@
+@mixin square($value) {
+  width: $value;
+  height: $value;
+}
+%border-radius {
+  border-radius: 5px;
+}
+
+@mixin fontSize($fontSize, $lineHeight: $fontSize) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+@mixin background ($color,$backColor:$color){
+  color: $color;
+  background-color: $backColor;
+}

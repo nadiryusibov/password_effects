@@ -1,0 +1,43 @@
+@import "mixin";
+@import "reset";
+
+.password-form {
+  max-width: 400px;
+  margin: 100px auto;
+  &__item {
+    label {
+      @include fontSize(26px, 1.5);
+      color: #0984e3;
+    }
+    &--input {
+      margin-bottom: 15px;
+      position: relative;
+      input {
+        width: 300px;
+        padding: 10px 5px;
+        border: 2px solid teal;
+        &:focus {
+          border: 2px solid #d63031;
+        }
+      }
+      a {
+        @include position(absolute, $top: 25%, $right: 30%);
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+    &--btn {
+      button {
+        padding: 12px 36px;
+        border: none;
+        @include background(white, teal);
+        @extend %border-radius;
+        transition: all 0.2s ease-in;
+        &:hover {
+          @include background(white, blue);
+        }
+      }
+    }
+  }
+}

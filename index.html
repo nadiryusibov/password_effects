@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Password</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="password-form">
+                        <form onsubmit="return false">
+                            <div class="password-form__item">
+                                <label for="username">Username</label>
+                                <div class="password-form__item--input">
+                                    <input type="text" id="username">
+                                </div>
+                                <label for="password">Password</label>
+                                <div class="password-form__item--input">
+                                    <input type="password" id="password">
+                                    <a type="button" id="eye" onclick="toggle()">
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="password-form__item--btn">
+                                    <button type="submit">Sign In</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
